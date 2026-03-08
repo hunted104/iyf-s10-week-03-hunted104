@@ -1,4 +1,4 @@
-# Week {2}: {Project Title}
+# Week {3}: {Project Title}
 
 ## Author
 - **Name:** Ian mutugi
