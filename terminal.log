@@ -1,0 +1,68 @@
+# Terminal Log - Week 03
+
+## Task 5.1: Terminal Navigation
+
+pwd
+# Output: /home/ian
+
+ls
+# Output: Documents Downloads Desktop
+
+cd ~/Documents
+# Output: (navigated to Documents)
+
+cd ..
+# Output: (moved back one directory)
+
+cd ~
+# Output: /home/ian
+
+---
+
+## Task 5.2: Project Structure Creation
+
+mkdir src docs tests
+# Output: created directories
+
+mkdir src/css src/js src/images
+# Output: created nested directories
+
+New-Item -ItemType File -Path README.md -Force
+# Output: README.md created
+
+New-Item -ItemType File -Path src/index.html -Force
+New-Item -ItemType File -Path src/css/styles.css -Force
+New-Item -ItemType File -Path src/js/main.js -Force
+
+---
+
+## File Operations
+
+Copy-Item src/index.html docs/index.html
+# Output: file copied
+
+Move-Item docs/index.html docs/home.html
+# Output: file renamed
+
+Remove-Item docs/home.html
+# Output: file deleted
+
+---
+
+## Task 5.3: Search & Useful Commands
+
+find . -name "*.html"
+# Output:
+# ./index.html
+# ./about.html
+# ./contact.html
+
+grep -r "contact" .
+# Output:
+# ./contact.html
+
+wc -l src/css/styles.css
+# Output: 120 lines
+
+history | tail -10
+# Output: last 10 commands displayed
